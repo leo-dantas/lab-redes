@@ -37,7 +37,7 @@ docker ps
 ```
 ### Conferindo se as informações constam
 ```
-docker exec -i -t 41f6babee338 /bin/bash
+docker exec -i -t 52507d3dcedb /bin/bash
 ```
 ```
 ls
