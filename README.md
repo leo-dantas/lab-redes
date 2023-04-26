@@ -5,7 +5,7 @@ Empresa: Canto do leitor
 
 ### Arquivos adicionados
 
-Foram adicionados os arquivos de servidor e cliente em python, juntamente do Dockerfile. Os mesmos podem ser encontrados no link
+Foram adicionados os arquivos de servidor e cliente em python, juntamente do Dockerfile. Os mesmos podem ser encontrados no link abaixo, também importante dizer que usei a porta 12008
 
 ```
 https://github.com/leo-dantas/lab-redes.git
@@ -27,12 +27,14 @@ docker build -t servidortcp4 .
 ```
 docker run -d servidortcp4
 ```
-### Conferindo se rodou
+### Conferindo se rodou e pegando a imagem
 ```
 docker ps
 ```
-
-
+### Rodando
+```
+docker ps
+```
 ### Conferindo se as informações constam
 ```
 docker exec -i -t 41f6babee338 /bin/bash
