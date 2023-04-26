@@ -8,10 +8,10 @@ Empresa: Canto do leitor
 Foram adicionados os arquivos de servidor e cliente em python, juntamente do Dockerfile. Os mesmos podem ser encontrados no link
 
 ```
-https://github.com/leo-dantas/2022-2-lab-t1-leo-dantas.git
+https://github.com/leo-dantas/lab-redes.git
 ```
 
 ### Comandos realizados
 ```
-git clone https://github.com/leo-dantas/2022-2-lab-t1-leo-dantas.git
+git clone https://github.com/leo-dantas/lab-redes.git
 ```
