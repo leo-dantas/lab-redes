@@ -15,3 +15,28 @@ https://github.com/leo-dantas/lab-redes.git
 ```
 git clone https://github.com/leo-dantas/lab-redes.git
 ```
+### Realizei o comando abaixo duas vezes
+```
+cd lab-redes/
+```
+### Dei build
+```
+docker build -t servidortcp4 .
+```
+### Dei run
+```
+docker run -d servidortcp4
+```
+### Conferindo se rodou
+```
+docker ps
+```
+
+
+### Conferindo se as informações constam
+```
+docker exec -i -t 41f6babee338 /bin/bash
+```
+```
+ls
+```
