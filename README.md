@@ -3,42 +3,37 @@ Aluno: Leonardo Dantas de Oliveira
 Disciplina: COMP0463 - LABORATÓRIO DE REDES DE COMPUTADORES (2022.2 - T01)
 Empresa: Canto do leitor
 
-### Arquivos adicionados
+### Criação de arquivos
+Após logar no elan criei index.html e pus meu HTML lá
+```
+nano index.html
+```
+Após isso, criei um Dockerfile e pus o seguinte comando
+```
+nano Dockerfile
+```
+```
+FROM python:3
+COPY index.html /usr/src/app/
+WORKDIR /usr/src/app
+EXPOSE 8000
+CMD ["python3", "-m", "http.server", "8000"]
+```
+### Comandos
+Dei build na minha imagem
+```
+docker build -f Dockerfile . -t testeimagem8
+```
+Depois dei run na porta 7361
+```
+docker run -d -p 7361:8000 -it --rm --name cantodoleitor testeimagem8
+```
+Com ele rodando, dei wget
+```
+wget http://127.0.0.1:7361/
+```
+Agora que o arquivo foi processado no wget, posso receber o HTML da minha página dando o comando
+```
+cat index.html.1
 
-Foram adicionados os arquivos de servidor e cliente em python, juntamente do Dockerfile. Os mesmos podem ser encontrados no link abaixo, também importante dizer que usei a porta 12008
-
-```
-https://github.com/leo-dantas/lab-redes.git
-```
-
-### Comandos realizados
-```
-git clone https://github.com/leo-dantas/lab-redes.git
-```
-### Realizei o comando abaixo duas vezes
-```
-cd lab-redes/
-```
-### Dei build
-```
-docker build -t servidortcp4 .
-```
-### Dei run
-```
-docker run -d servidortcp4
-```
-### Conferindo se rodou e pegando a imagem
-```
-docker ps
-```
-### Rodando
-```
-docker ps
-```
-### Conferindo se as informações constam
-```
-docker exec -i -t 52507d3dcedb /bin/bash
-```
-```
-ls
 ```
